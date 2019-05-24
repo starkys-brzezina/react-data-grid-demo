@@ -3,7 +3,7 @@ import { DraggableHeader } from 'react-data-grid-addons';
 import ReactDataGrid from 'react-data-grid';
 import 'react-data-grid/dist/react-data-grid.css';
 import Toolbar from './components/Toolbar';
-import AppStore from './AppStore';
+import AppStore from './GridStore';
 import { observer } from 'mobx-react';
 
 @observer

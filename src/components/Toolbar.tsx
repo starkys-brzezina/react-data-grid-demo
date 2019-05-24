@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ToolbarProps } from 'react-data-grid';
 import { observer } from 'mobx-react';
-import AppStore from '../AppStore';
+import AppStore from '../GridStore';
 
 interface CustomToolbarProps {
     children?: JSX.Element;
