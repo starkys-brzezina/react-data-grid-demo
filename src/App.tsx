@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+import { DraggableHeader } from 'react-data-grid-addons';
+import ReactDataGrid from 'react-data-grid';
+import 'react-data-grid/dist/react-data-grid.css';
+import Toolbar from './components/Toolbar';
+import AppStore from './AppStore';
+import { observer } from 'mobx-react';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+@observer
+class App extends React.Component<any, any> {
+  store = AppStore;
+
+  render() {
+    return (
+      <>
+        <DraggableHeader.DraggableContainer onHeaderDrop={this.store.onHeaderDrop}>
+          <ReactDataGrid
+            columns={this.store.columns}
+            rowGetter={i => this.store.visibleRows[i]}
+            rowsCount={this.store.visibleRows.length}
+            minHeight={500}
+            toolbar={<Toolbar />}
+            getValidFilterValues={() => []}
+            onAddFilter={this.store.handleFilterChange}
+          />
+        </DraggableHeader.DraggableContainer>
+      </>
+    );
+  }
+
 }
 
 export default App;
