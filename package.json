@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "@types/jest": "24.0.13",
+    "@types/lodash": "^4.14.132",
     "@types/node": "12.0.2",
     "@types/react": "16.8.18",
     "@types/react-dom": "16.8.4",
+    "js-xlsx": "^0.8.22",
+    "lodash": "^4.17.11",
     "mobx": "^5.9.4",
     "mobx-react": "^5.4.4",
     "react": "^16.8.6",
@@ -14,7 +17,8 @@
     "react-data-grid-addons": "^7.0.0-alpha.12",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "typescript": "3.4.5"
+    "typescript": "3.4.5",
+    "pd-components": "file:../pd-components"
   },
   "scripts": {
     "start": "react-scripts start",
