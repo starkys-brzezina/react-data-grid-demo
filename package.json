@@ -3,18 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "inversify": "^5.0.1",
-    "inversify-binding-decorators": "^4.0.0",
-    "inversify-inject-decorators": "^3.1.0",
     "@babel/core": "7.4.3",
     "@svgr/webpack": "4.1.0",
-    "@types/jest": "24.0.13",
-    "@types/lodash": "^4.14.132",
-    "@types/node": "12.0.2",
-    "@types/react": "16.8.18",
-    "@types/react-dom": "16.8.4",
-    "@typescript-eslint/eslint-plugin": "1.6.0",
-    "@typescript-eslint/parser": "1.6.0",
     "babel-eslint": "10.0.1",
     "babel-jest": "^24.8.0",
     "babel-loader": "8.0.5",
@@ -37,6 +27,9 @@
     "fs-extra": "7.0.1",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
+    "inversify": "^5.0.1",
+    "inversify-binding-decorators": "^4.0.0",
+    "inversify-inject-decorators": "^3.1.0",
     "is-wsl": "^1.1.0",
     "jest": "24.7.1",
     "jest-environment-jsdom-fourteen": "0.1.0",
@@ -56,8 +49,6 @@
     "postcss-safe-parser": "4.0.1",
     "react": "^16.8.6",
     "react-app-polyfill": "^1.0.1",
-    "react-data-grid": "git+https://github.com/starkys-brzezina/react-data-grid-lib.git",
-    "pd-components": "git+https://github.com/starkys-brzezina/pd-components.git",
     "react-dev-utils": "^9.0.1",
     "react-dom": "^16.8.6",
     "reflect-metadata": "^0.1.13",
@@ -72,7 +63,8 @@
     "webpack": "4.29.6",
     "webpack-dev-server": "3.2.1",
     "webpack-manifest-plugin": "2.0.4",
-    "workbox-webpack-plugin": "4.2.0"
+    "workbox-webpack-plugin": "4.2.0",
+    "pd-components": "git+https://github.com/starkys-brzezina/pd-components.git"
   },
   "scripts": {
     "start": "node scripts/start.js",
@@ -97,7 +89,14 @@
   "devDependencies": {
     "@types/classnames": "^2.2.7",
     "@types/react-is": "^16.7.1",
-    "@types/shallowequal": "^1.1.1"
+    "@types/shallowequal": "^1.1.1",
+    "@types/jest": "24.0.13",
+    "@types/lodash": "^4.14.132",
+    "@types/node": "12.0.2",
+    "@types/react": "16.8.18",
+    "@types/react-dom": "16.8.4",
+    "@typescript-eslint/eslint-plugin": "1.6.0",
+    "@typescript-eslint/parser": "1.6.0"
   },
   "jest": {
     "collectCoverageFrom": [
