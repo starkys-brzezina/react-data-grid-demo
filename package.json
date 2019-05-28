@@ -58,7 +58,6 @@
     "react-app-polyfill": "^1.0.1",
     "react-data-grid": "git+https://github.com/starkys-brzezina/react-data-grid-lib.git",
     "pd-components": "git+https://github.com/starkys-brzezina/pd-components.git",
-    "react-data-grid-addons": "^7.0.0-alpha.12",
     "react-dev-utils": "^9.0.1",
     "react-dom": "^16.8.6",
     "reflect-metadata": "^0.1.13",
